@@ -106,3 +106,47 @@ main {
   border-radius: 29px;
   background: #855fb1;
 }
+
+.num-container {
+  margin: 144px auto 0;
+  width: 56px;
+  height: 56px;
+  padding: 15px 19px;
+  border-radius: 50%;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  position: relative;
+  color: #87879d;
+  font-weight: 900;
+}
+
+.num-container::after {
+  content: "";
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  width: 1px;
+  height: 84px;
+  background-color: #87879d;
+  transform: translateX(-50%);
+}
+
+.gallery {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 484px;
+  width: 100%;
+}
+
+.img-container {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
