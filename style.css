@@ -97,11 +97,13 @@ main {
 .download {
   padding: 16px 40px;
   border-radius: 29px;
+  cursor: pointer;
 }
 
 .download-primary {
   background-color: #4d96a9;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .download-primary:hover {
@@ -165,6 +167,7 @@ main {
 .img-container {
   flex-basis: calc(50% - 20px);
   border-radius: 8px;
+  flex-grow: 1;
 }
 
 .gallery img {
@@ -270,6 +273,13 @@ main {
   color: #d9b8ff;
 }
 
+.download__section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   /* .container {
     margin: 0 40px;
@@ -343,5 +353,100 @@ main {
     max-width: 573px;
     width: 100%;
     margin: 0 auto 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    margin-top: 80px;
+  }
+
+  .num1 {
+    transform: translate(-50%, 200px);
+  }
+
+  .bg-img {
+    background-image: url(./assets/desktop/image-hero-left.png),
+      url(./assets/desktop/image-hero-right.png);
+    background-position: top left -80px, top 50px right -80px;
+    background-size: 32%;
+  }
+
+  .information {
+    margin-top: -670px;
+    margin-bottom: 250px;
+  }
+
+  .main-title {
+    max-width: 445px;
+    text-align: center;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .information-text {
+    font-size: 18px;
+    max-width: 540px;
+    line-height: 26px;
+  }
+  .gallery {
+    max-width: 1120px;
+    gap: 25px;
+    margin-bottom: 70px;
+  }
+
+  .subtitle {
+    margin-bottom: 12px;
+  }
+  .img-container {
+    flex-basis: calc(25%- 25px);
+  }
+
+  .img-container img {
+    width: 100%;
+  }
+  .about-text {
+    max-width: 540px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .download-section {
+    background-image: url(assets/desktop/image-footer.jpg);
+    background-position: center;
+  }
+
+  .download__section-content {
+    flex-direction: row;
+    align-items: center;
+    padding: 116px 165px 120px;
+  }
+
+  .white-title {
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    text-align: start;
+    font-size: 40px;
+    margin-right: 125px;
+  }
+
+  .download-text {
+    margin: 0;
+    font-size: 18px;
+    max-width: 350px;
+    text-align: start;
+    margin-right: 92px;
+  }
+
+  .secondary-download {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1800px) {
+  .information {
+    margin-top: -800px;
+    margin-bottom: 250px;
   }
 }
