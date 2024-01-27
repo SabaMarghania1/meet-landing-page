@@ -76,7 +76,8 @@ main {
 
 .information {
   max-width: 327px;
-  margin: 0 auto;
+  margin: 0 auto 200px;
+  position: relative;
 }
 
 .main-title {
@@ -100,6 +101,11 @@ main {
 
 .download-primary {
   background-color: #4d96a9;
+  transition: all 0.5s;
+}
+
+.download-primary:hover {
+  background-color: #71c0d4;
 }
 
 .version {
@@ -110,10 +116,14 @@ main {
   padding: 16px 29px;
   border-radius: 29px;
   background: #855fb1;
+  transition: 0.4s all;
+}
+
+.question-btn:hover {
+  background-color: #b18bdd;
 }
 
 .num-container {
-  margin: 144px auto 0;
   width: 56px;
   height: 56px;
   padding: 15px 19px;
@@ -122,6 +132,11 @@ main {
   position: relative;
   color: #87879d;
   font-weight: 900;
+}
+
+.num1 {
+  left: 50%;
+  transform: translate(-50%, 134px);
 }
 
 .num-container::after {
@@ -162,7 +177,7 @@ main {
 .about {
   text-align: center;
   max-width: 327px;
-  margin: 0 auto;
+  margin: 0 auto 164px;
 }
 
 .subtitle {
@@ -188,7 +203,7 @@ main {
 }
 
 .download-section {
-  margin-top: 100px;
+  margin: 144px auto 0;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -197,8 +212,15 @@ main {
   background-image: url(./assets/mobile/image-footer.jpg);
   background-size: cover;
   background-position: center top;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 10;
+}
+
+.num2 {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
 }
 
 .download-section::after {
@@ -237,6 +259,11 @@ main {
   padding: 16px 40px;
   color: #fff;
   margin: 0 auto 70px;
+  transition: all 0.4s;
+}
+
+.secondary-download:hover {
+  background-color: #b18bdd;
 }
 
 .secondary-download span {
@@ -250,6 +277,11 @@ main {
 
   .information {
     max-width: 457px;
+    margin: 0 auto 220px;
+  }
+
+  .num1 {
+    transform: translate(-50%, 154px);
   }
   .main-title {
     font-size: 48px;
@@ -264,10 +296,6 @@ main {
   .info-btns {
     flex-direction: row;
     gap: 16px;
-  }
-
-  .num-container {
-    margin-top: 180px;
   }
 
   .gallery {
@@ -291,6 +319,7 @@ main {
 
   .about {
     max-width: 573px;
+    margin: 0 auto 184px;
   }
 
   .about-title {
@@ -302,7 +331,6 @@ main {
   .download-section {
     background-image: url(./assets/tablet/image-footer.jpg);
     background-position: center top;
-    background-size: contain;
   }
 
   .white-title {
