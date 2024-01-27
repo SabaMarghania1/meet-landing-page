@@ -67,7 +67,7 @@ main {
 }
 
 .bg-img {
-  background-image: url("./assets/tablet/image-hero.png");
+  background-image: url(./assets/tablet/image-hero.png);
   padding: 25%;
   background-size: contain;
   background-repeat: no-repeat;
